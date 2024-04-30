@@ -1,0 +1,16 @@
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th>Product Name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @products.each do |product| %>
+            <tr>
+                <td><%= link_to product.name, product_path(product) %></td>
+            </tr>
+        <% end %>
+    </tbody>
+
+</table>
